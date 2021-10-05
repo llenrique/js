@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Shapes</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <header>
+      <h1>Shapes</h1>
+    </header>
+    <section>
+      <h2>Squares</h2>
+      <section id="square-input">
+        <div>
+          <label for="squareSide">Size:</label>
+          <input id="squareSide" type="number" name="squareSide">
+        </div>
+      </section>
+      <button type="button" onclick="squarePerimeter()">Perimeter</button>
+      <button type="button" onclick="squareSurface()">Surface</button>
+      <section id="results">
+        <p id="SquarePerimeter"></p>
+        <p id="SquareSurface"></p>
+      </section>
+    </section>
+
+    <section>
+      <h2>Triangles</h2>
+      <section id="triangle-input">
+        <div>
+          <label for="trianlgeSizea">Size A (Left):</label>
+          <input id="a" type="number" name="trianlgeSizea">
+        </div>
+        <div>
+          <label for="trianlgeSizeB">Size B (Base):</label>
+          <input id="b" type="number" name="trianlgeSizeb">
+        </div>
+        <div>
+          <label for="trianlgeSizec">Size C (Right):</label>
+          <input id="c" type="number" name="trianlgeSizec">
+        </div>
+        <div>
+          <label for="high">High (Top):</label>
+          <input id="h" type="number" name="high">
+        </div>
+      </section>
+      <button type="button" onclick="trianglePerimeter()">Perimeter</button>
+      <button type="button" onclick="triangleSurface()">Surface</button>
+      <section id="results">
+        <p id="TrianglePerimeter"></p>
+        <p id="TriangleSurface"></p>
+      </section>
+    </section>
+    
+    <section>
+      <h2>Circles</h2>
+      <section id="circle-input">
+        <div>
+          <label for="radius">Radius</label>
+          <input id="r" type="number" name="radius">
+        </div>
+      <button type="button" onclick="circlePerimeter()">Perimeter</button>
+      <button type="button" onclick="circleSurface()">Surface</button>
+      <section id="results">
+        <p id="circlePerimeter"></p>
+        <p id="circleSurface"></p>
+      </section>
+    </section>
+
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>
